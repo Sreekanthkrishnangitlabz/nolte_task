@@ -86,7 +86,7 @@ const Container = styled.div`
 	align-items: center;
 `;
 const Certificate = styled.div`
-	width: 800px;
+	max-width: 800px;
 	position: relative;
 `;
 const BgImage = styled.div`
@@ -105,6 +105,13 @@ const ContentSection = styled.div`
 	left: 0;
 	margin: 20px;
 	height: 43%;
+	@media all and (max-width: 640px) {
+		padding: 10px 30px;
+		height: 42%;
+	}
+	@media all and (max-width: 480px) {
+		margin-top: 0;
+	}
 `;
 const Name = styled.div`
 	text-align: center;
@@ -112,37 +119,83 @@ const Name = styled.div`
 	font-family: "Tangerine", cursive;
 	font-size: 75px;
 	font-weight: 700;
+	@media all and (max-width: 640px) {
+		font-size: 55px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 35px;
+	}
 `;
 const CertificateFor = styled.p`
 	text-align: center;
 	font-size: 18px;
 	margin-top: 20px;
+	@media all and (max-width: 640px) {
+		font-size: 13px;
+		margin-top: 10px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 10px;
+	}
 `;
 const PlatformName = styled.h2`
 	font-size: 20px;
 	text-align: center;
 	margin-top: 10px;
+	@media all and (max-width: 640px) {
+		font-size: 15px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 12px;
+	}
 `;
 const OfficialsSection = styled.div`
 	display: flex;
 	justify-content: space-around;
 	margin-top: 15%;
+	@media all and (max-width: 640px) {
+		margin-top: 10%;
+	}
+	@media all and (max-width: 480px) {
+		margin-top: 20px;
+	}
 `;
 const Officials = styled.div``;
 
 const OfficialName = styled.p`
 	font-size: 18px;
 	font-weight: 600;
+	@media all and (max-width: 640px) {
+		font-size: 14px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 12px;
+	}
 `;
 const Designation = styled.p`
 	font-size: 14px;
+	@media all and (max-width: 640px) {
+		font-size: 12px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 10px;
+	}
 `;
 const SignArea = styled.span`
 	display: block;
 	margin-top: 40px;
 	border-bottom: 2px solid #000;
+	@media all and (max-width: 640px) {
+		margin-top: 20px;
+	}
 `;
 const Date = styled.p`
 	font-size: 14px;
 	margin-top: 10px;
+	@media all and (max-width: 640px) {
+		font-size: 12px;
+	}
+	@media all and (max-width: 480px) {
+		font-size: 10px;
+	}
 `;
